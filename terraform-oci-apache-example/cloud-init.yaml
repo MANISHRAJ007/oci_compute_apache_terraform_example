@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Installing Apache Server"
+sudo yum install -y httpd
+echo "Enabling Apache"
+sudo systemctl enable httpd
+echo "Starting Apache"
+sudo systemctl restart httpd
+echo "Enabling firewall"
+sudo firewall-cmd --add-service=http --permanent
+sudo firewall-cmd --reload

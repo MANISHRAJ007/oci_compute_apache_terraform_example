@@ -1,0 +1,1 @@
+Terraform module to provision OCI compute instance of BM.Standard2.52 shape & OL7 image with Apache.
